@@ -1,0 +1,108 @@
+		.item1 { grid-area: header }
+		.item2 { grid-area: main }
+		.item3 { grid-area: right; }
+		
+		.grid-container {
+			display: grid;
+			grid-template-areas:
+			'header header header header header'
+			'main main main right right'
+			'footer footer footer footer footer';
+			width: 1100px;
+			margin: 0 auto;
+		}
+		.grid-container > div {
+			background-color: rgba(255, 255, 255, 0.8);
+			text-align: center;
+			padding: 20px 0;
+			font-size: 30px;
+		}
+		body{
+			
+			background-image: url("header_bg.png");
+			background-repeat: repeat-x;
+		
+		}
+		.item1{
+			height: 78px;
+			
+		}
+		.item2{
+			background-image: url('img/banner_bg.png')
+		}
+		.item3{
+			background-image: url('img/banner_bg.png')
+		}
+		.HeaderIMG{
+			float: left;
+			margin-bottom: 10px;
+			margin-left: 50px
+		}
+		.bannerIMG{
+			float: left;
+			margin-left: 50px;
+			margin-bottom: 60px;
+		}
+		.BannerHeadText{
+			float: left;
+			margin-left: 30px;
+			font-size: 26px;
+			color: white;
+		}
+		.BannerParagraph{
+			float: left;
+			margin-left: 30px;
+			margin-right: 30px;
+			font-size: 14px;
+			color: white;
+		}
+		.Firstbutton{
+			float: left;
+			margin-top: 30px;
+			margin-left: 110px;
+			width: 70px;
+			border: none;
+			background-color: white;
+		}
+		.button{
+			float: left;
+			margin-top: 30px;
+			margin-left: 20px;
+			width: 70px;
+			border: none;
+			background-color: white;
+			}
+		.grid2 {
+    width: 80%;
+    display: grid;
+    grid-template-areas: 'left middle right' 'textleft textmiddle textright'; 
+    padding: 5px;
+    margin: 0 auto;
+
+    font-size: 12px;
+    grid-gap: 45px;
+	}
+
+    .left2 { grid-area: left; }
+    .middle2 { grid-area: middle; }
+    .right2 { grid-area: right; }
+
+    .textleft2 { grid-area: textleft; }
+    .textmiddle2 { grid-area: textmiddle; }
+    .textright2 { grid-area: textright; }
+
+    div.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url("img/footer_bg.png");
+    background-repeat: repeat-x;
+    width: 100%
+
+}
+
+p.footer {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
